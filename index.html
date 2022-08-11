@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Diff</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<header>
+    <h1>Text Diff</h1>
+</header>
+<div class="content">
+    <div class="step-1">
+        <h2>Этап 1. Ввод текста</h2>
+        <form id="form-diff">
+            <div class="columns">
+                <div class="column">
+                    <label for="textA">Первая версия текста</label>
+                    <textarea name="textA" id="textA" cols="70" rows="10">
+Это тестовый контент, не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.
+                </textarea>
+                </div>
+                <div class="column">
+                    <label for="textB">Вторая версия текста</label>
+                    <textarea name="textB" id="textB" cols="70" rows="10">
+Этооо тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле . 123 . Абракадабра
+                </textarea>
+                </div>
+            </div>
+            <button>Сравнить</button>
+        </form>
+    </div>
+
+    <div class="step-2">
+        <h2>Этап 2. Результат</h2>
+        <div class="diff-result"></div>
+    </div>
+</div>
+<footer>Разработчик Турецкий Сергей</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

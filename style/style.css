@@ -1,0 +1,33 @@
+header, .content, footer {
+    max-width: 800px;
+    margin: auto;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+.step-2 {
+    display: none;
+}
+
+.diff-match {
+
+}
+
+.diff-added {
+    background: #50ff50;
+}
+
+.diff-deleted {
+
+}
+
+.diff-changed {
+    background: #fcfc00;
+}
